@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Free Dog Poop Scooping Quote | Poop Scoop Detail Boise Area</title>
+  <meta name="description" content="Get a fast, free quote for professional dog poop scooping services in Boise, Meridian, Nampa, and Caldwell. Weekly, biweekly, and one-time cleanups available." />
+
+  <style>
+    :root {
+      --light-green: #dcefd8;
+      --mid-green: #9fcb9b;
+      --dark-green: #2f5d3b;
+      --white: #ffffff;
+      --text: #2f5d3b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      opacity: 0;
+      animation: pageFadeIn 0.8s ease-out forwards;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, var(--white) 0%, var(--light-green) 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    @keyframes pageFadeIn {
+      to { opacity: 1; }
+    }
+
+    .container {
+      background: rgba(255,255,255,0.92);
+      border: 2px solid rgba(47, 93, 59, 0.12);
+      border-radius: 24px;
+      padding: 48px 36px;
+      max-width: 720px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(47, 93, 59, 0.08);
+      backdrop-filter: blur(4px);
+    }
+
+    .logo {
+      opacity: 0;
+      transform: translateY(10px) scale(0.98);
+      animation: logoEnter 1s ease-out 0.2s forwards;
+      max-width: 240px;
+      width: 100%;
+      margin: 0 auto 24px auto;
+      display: block;
+    }
+
+    @keyframes logoEnter {
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      color: var(--dark-green);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: #456b4d;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .form-box {
+      background: #f7fbf6;
+      border: 1px solid rgba(47, 93, 59, 0.12);
+      border-radius: 18px;
+      padding: 28px;
+      text-align: left;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #456b4d;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(47, 93, 59, 0.2);
+      font-family: inherit;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: var(--mid-green);
+      box-shadow: 0 0 0 2px rgba(159,203,155,0.3);
+    }
+
+    .full {
+      grid-column: span 2;
+    }
+
+    .honeypot {
+      display: none;
+    }
+
+    .submit-btn {
+      margin-top: 18px;
+      width: 100%;
+      background: var(--dark-green);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(47, 93, 59, 0.15);
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-3px);
+      box-shadow:
+        0 8px 20px rgba(47, 93, 59, 0.25),
+        0 0 12px rgba(159, 203, 155, 0.35);
+    }
+
+    .submit-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.25),
+        transparent
+      );
+      transform: skewX(-20deg);
+    }
+
+    .submit-btn:hover::before {
+      animation: shimmer 0.6s ease;
+    }
+
+    @keyframes shimmer {
+      100% { left: 125%; }
+    }
+
+    @media (max-width: 600px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .full {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="container">
+
+  <img src="assets/PS Detail Fin.png" class="logo" alt="Poop Scoop Detail Logo" />
+
+  <h1>Get Your Free Quote</h1>
+
+  <p class="subtitle">
+    Request a fast, free quote for professional dog poop scooping services.
+    We respond to all inquiries within 24 hours.
+  </p>
+
+  <section class="form-box">
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+      <!-- Formspree email formatting -->
+      <input type="hidden" name="_subject" value="New Quote Request - Poop Scoop Detail" />
+      <input type="hidden" name="_template" value="table" />
+
+      <!-- Honeypot (spam trap) -->
+      <div class="honeypot">
+        <label>Do not fill this out</label>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <div class="form-grid">
+
+        <div>
+          <label>First Name</label>
+          <input type="text" name="firstName" required />
+        </div>
+
+        <div>
+          <label>Last Name</label>
+          <input type="text" name="lastName" required />
+        </div>
+
+        <div>
+          <label>Phone</label>
+          <input type="tel" name="phone" required />
+        </div>
+
+        <div>
+          <label>Email</label>
+          <input type="email" name="email" required />
+        </div>
+
+        <div>
+          <label>City</label>
+          <input type="text" name="city" required />
+        </div>
+
+        <div>
+          <label>Zip Code</label>
+          <input type="text" name="zip" required />
+        </div>
+
+        <div>
+          <label>Service Type</label>
+          <select name="serviceType">
+            <option>One-Time</option>
+            <option>Weekly</option>
+            <option>Biweekly</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Yard Size</label>
+          <select name="yardSize">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>X-Large / Open Property</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label>Grass Length</label>
+          <select name="grassLength">
+            <option>Short</option>
+            <option>Medium</option>
+            <option>Tall</option>
+            <option>Overgrown</option>
+          </select>
+        </div>
+
+      </div>
+
+      <button class="submit-btn" type="submit">
+        Request My Free Quote
+      </button>
+
+    </form>
+
+  </section>
+
+</main>
+
+</body>
+</html>
