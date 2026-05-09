@@ -128,12 +128,44 @@
       padding: 12px 22px;
       border-radius: 12px;
       font-weight: 600;
-      transition: all 0.2s ease;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 12px rgba(47, 93, 59, 0.15);
+      position: relative;
+      overflow: hidden;
     }
 
     .links a:hover {
       background: #24492e;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
+      box-shadow:
+        0 8px 20px rgba(47, 93, 59, 0.25),
+        0 0 12px rgba(159, 203, 155, 0.35);
+    }
+
+    .links a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+      );
+      transform: skewX(-20deg);
+    }
+
+    .links a:hover::before {
+      animation: shimmer 0.6s ease;
+    }
+    
+    @keyframes shimmer {
+      100% {
+        left: 125%;
+      }
     }
     
     .badge-wrapper {
