@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poop Scoop Detail</title>
+
+  <style>
+    :root {
+      --light-green: #dcefd8;
+      --mid-green: #9fcb9b;
+      --dark-green: #2f5d3b;
+      --white: #ffffff;
+      --text: #2f5d3b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(
+        180deg,
+        var(--white) 0%,
+        var(--light-green) 100%
+      );
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.92);
+      border: 2px solid rgba(47, 93, 59, 0.12);
+      border-radius: 24px;
+      padding: 48px 36px;
+      max-width: 720px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(47, 93, 59, 0.08);
+      backdrop-filter: blur(4px);
+    }
+
+    .logo {
+      max-width: 240px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      color: var(--dark-green);
+      margin-bottom: 14px;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: #456b4d;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .construction-badge {
+      display: inline-block;
+      background: var(--dark-green);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 28px;
+      letter-spacing: 0.3px;
+    }
+
+    .contact-box {
+      background: #f7fbf6;
+      border: 1px solid rgba(47, 93, 59, 0.12);
+      border-radius: 18px;
+      padding: 28px;
+      margin-top: 10px;
+    }
+
+    .contact-box p {
+      line-height: 1.7;
+      margin-bottom: 18px;
+      color: #456b4d;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: white;
+      background: var(--dark-green);
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .links a:hover {
+      background: #24492e;
+      transform: translateY(-2px);
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--dark-green);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 34px;
+      font-size: 0.9rem;
+      color: #6d8a73;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 38px 24px;
+      }
+
+      .links {
+        flex-direction: column;
+      }
+
+      .links a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- Replace logo-placeholder.png with your actual logo file -->
+    <img
+      src="logo-placeholder.png"
+      alt="Poop Scoop Detail Logo"
+      class="logo"
+    />
+
+    <div class="construction-badge">
+      Website Under Construction
+    </div>
+
+    <h1>Poop Scoop Detail</h1>
+
+    <p class="subtitle">
+      We're currently putting the finishing touches on our website,
+      but we're open, active, and would love to hear from you.
+    </p>
+
+    <section class="contact-box">
+
+      <p>
+        In the meantime, feel free to reach out through our social media
+        pages or send us an email for questions, quotes, or service inquiries.
+      </p>
+
+      <div class="links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+
+      <a href="mailto:your@email.com" class="email">
+        your@email.com
+      </a>
+
+    </section>
+
+    <div class="footer">
+      © 2026 Poop Scoop Detail. All rights reserved.
+    </div>
+
+  </main>
+
+</body>
+</html>
