@@ -189,7 +189,7 @@
     .service-grid {
       list-style: none;
       display: grid;
-      grid-template-columns: repeat(2, auto);
+      grid-template-columns: repeat(2, max-content);
       gap: 8px 40px;
       justify-content: center;
       padding: 0;
@@ -197,6 +197,10 @@
       font-size: 0.9rem;
       color: var(--dark-green);
       font-weight: 500;
+    }
+
+    .service-grid li {
+      text-align: left;
     }
     
     .email {
