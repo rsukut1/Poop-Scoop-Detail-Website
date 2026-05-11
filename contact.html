@@ -149,41 +149,58 @@
   <section class="form-box">
 
     <form id="contactForm" action="https://formspree.io/f/mbdwqlrp" method="POST">
+    
+      <!-- =======================
+           SPAM / SYSTEM FIELDS
+      ======================== -->
+    
       <!-- Honeypot (spam trap) -->
-    <div class="honeypot">
-      <label>Do not fill this out</label>
-      <input type="text" name="website" tabindex="-1" autocomplete="off" />
-    </div>
+      <div class="honeypot">
+        <label>Do not fill this out</label>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" />
+      </div>
+    
+      <input type="hidden" name="_subject" value="New Contact Message - Poop Scoop Detail" />
+      <input type="hidden" name="_template" value="table" />
+    
+      <!-- =======================
+               USER FIELDS
+      ======================== -->
+    
       <label>Name</label>
       <input type="text" name="name" required />
-
+    
       <label>Email</label>
       <input type="email" name="email" required />
-
+    
       <label>Phone (optional)</label>
       <input type="tel" name="phone" />
-
+    
       <label>Message</label>
       <textarea name="message" placeholder="How can we help you?" required></textarea>
-
+    
       <label>Approximate Address / Area</label>
       <input type="text" name="location" placeholder="City, neighborhood, or address (optional)" />
-
+    
       <label>Date of Last Cleanup</label>
       <input 
         type="text" 
         name="lastCleanup" 
         placeholder="Month / Year (or approximate if unsure)"
       />
-
+    
+      <!-- =======================
+               SUBMIT
+      ======================== -->
+    
       <button class="submit-btn" type="submit">
         Send Message
       </button>
-
+    
       <div class="note">
         If you’re requesting a quote, we may follow up with a quick walkthrough or clarification so we can provide accurate pricing.
       </div>
-
+    
     </form>
 
   </section>
