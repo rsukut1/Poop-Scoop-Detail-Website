@@ -142,7 +142,7 @@
 
   <section class="form-box">
 
-    <form action="https://formspree.io/f/mbdwqlrp" method="POST">
+    <form id="contactForm" action="https://formspree.io/f/mbdwqlrp" method="POST">
 
       <label>Name</label>
       <input type="text" name="name" required />
@@ -180,5 +180,34 @@
 
 </main>
 
+  <script>
+  const contactForm = document.getElementById("contactForm");
+
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = "thank-you.html";
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+
+    } catch (error) {
+      alert("Network error. Please try again.");
+    }
+  });
+</script>
+  
 </body>
 </html>
