@@ -72,6 +72,10 @@
       margin-bottom: 28px;
     }
 
+    .honeypot {
+      display: none;
+    }
+    
     .form-box {
       background: #f7fbf6;
       border: 1px solid rgba(47, 93, 59, 0.12);
@@ -145,7 +149,11 @@
   <section class="form-box">
 
     <form id="contactForm" action="https://formspree.io/f/mbdwqlrp" method="POST">
-
+      <!-- Honeypot (spam trap) -->
+    <div class="honeypot">
+      <label>Do not fill this out</label>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" />
+    </div>
       <label>Name</label>
       <input type="text" name="name" required />
 
